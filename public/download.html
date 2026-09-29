@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Ed-Novate Africa</title>
+    <link rel="icon" href="/favicon.svg" />
+    <style>
+      :root {
+        --forest: #0d4f3c;
+        --paper: #fbf7f0;
+        --gold: #c9922a;
+        --clay: #c45c26;
+        --ink: #3c4d45;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: var(--paper);
+        color: var(--forest);
+        font-family: Georgia, "Times New Roman", serif;
+        padding: 24px;
+      }
+      main {
+        max-width: 34rem;
+        text-align: center;
+      }
+      p.kicker {
+        font-family: "Segoe UI", sans-serif;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        color: var(--clay);
+        font-weight: 700;
+      }
+      h1 { font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 500; line-height: 1.15; }
+      p.body { font-family: "Segoe UI", sans-serif; color: var(--ink); line-height: 1.55; }
+      a.btn {
+        display: inline-block;
+        margin-top: 8px;
+        background: var(--clay);
+        color: #fffaf3;
+        text-decoration: none;
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 700;
+        padding: 0.95rem 1.4rem;
+        border-radius: 999px;
+      }
+      ol {
+        text-align: left;
+        font-family: "Segoe UI", sans-serif;
+        color: var(--ink);
+        line-height: 1.6;
+      }
+      code {
+        background: #efe6d6;
+        padding: 0.1rem 0.35rem;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="kicker">Ed-Novate Africa</p>
+      <h1>Download the website project</h1>
+      <p class="body">
+        This zip is the full source (no node_modules). Unzip it on your computer,
+        then install and run it locally.
+      </p>
+      <p>
+        <a class="btn" href="/ednovate-web.zip" download="ednovate-web.zip">
+          Download ednovate-web.zip
+        </a>
+      </p>
+      <ol>
+        <li>Install Node.js LTS from <a href="https://nodejs.org">nodejs.org</a></li>
+        <li>Unzip the folder</li>
+        <li>In that folder run <code>npm install</code> then <code>npm run dev</code></li>
+        <li>Open <code>http://127.0.0.1:4327</code></li>
+      </ol>
+    </main>
+  </body>
+</html>

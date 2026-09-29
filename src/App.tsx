@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Layout } from "./components/Layout"
+import { DownloadPage } from "./pages/Download"
 import { EmployersPage } from "./pages/Employers"
 import { HomePage } from "./pages/Home"
 import { ImpactPage } from "./pages/Impact"
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/learners" element={<LearnersPage />} />
           <Route path="/employers" element={<EmployersPage />} />
           <Route path="/impact" element={<ImpactPage />} />
+          <Route path="/download" element={<DownloadPage />} />
           <Route path="/join" element={<JoinPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>

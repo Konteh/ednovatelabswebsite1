@@ -31,6 +31,13 @@ export function Header() {
               {link.label}
             </NavLink>
           ))}
+          <a
+            href="/ednovate-web.zip"
+            download="ednovate-web.zip"
+            className="text-sm font-medium text-ink-soft no-underline hover:text-forest"
+          >
+            Download zip
+          </a>
           <NavLink to="/join" className="btn btn-dark !py-2.5 !px-4 text-sm">
             Join the waitlist
           </NavLink>
@@ -67,6 +74,14 @@ export function Header() {
                 {link.label}
               </NavLink>
             ))}
+            <a
+              href="/ednovate-web.zip"
+              download="ednovate-web.zip"
+              onClick={() => setOpen(false)}
+              className="rounded-xl px-3 py-2.5 text-ink no-underline"
+            >
+              Download zip
+            </a>
             <NavLink
               to="/join"
               onClick={() => setOpen(false)}
